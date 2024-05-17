@@ -13,7 +13,7 @@ export default {
   data() {
     return {
       // 주문번호 샘플(6자리이상 : 토스 결재 API 필수자리수) : 주문번호는 고유한 값으로 테스트 할것
-      sono: 222231
+      sono: 222233
     }
   },
   methods: {
