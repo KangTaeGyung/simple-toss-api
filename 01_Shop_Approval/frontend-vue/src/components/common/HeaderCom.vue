@@ -18,15 +18,14 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- {/* me-auto : 2nd ul 태그가 오른쪽으로 이동됨 */} -->
           <!-- {/* 1st ul 시작 */} -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <!-- {/* 홈 시작 */} -->
+            <!-- {/* 홈 */} -->
             <li class="nav-item ms-2">
               <a class="nav-link active" aria-current="page" href="/"> Home </a>
             </li>
-            <!-- {/* 홈 끝 */} -->
-            <!-- {/* 기초 시작 */} -->
+            
+            <!-- {/* 기초 예제 */} -->
             <li class="nav-item dropdown ms-2">
               <a
                 class="nav-link dropdown-toggle"
@@ -43,9 +42,7 @@
                 </li>
               </ul>
             </li>
-            <!-- {/* 기초 끝 */} -->
           </ul>
-          <!-- {/* 1st ul 끝 */} -->
         </div>
       </div>
     </nav>

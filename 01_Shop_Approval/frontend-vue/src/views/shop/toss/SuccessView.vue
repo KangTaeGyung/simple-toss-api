@@ -60,19 +60,18 @@ export default {
     },
     // 결재 저장 함수 정의(개발자코딩)
     async confirmApproval() {
-      let now = new Date();
-      let formatNow = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+      let now              = new Date();
+      let yearMonthDay     = `${now.getFullYear()}-${now.getMonth()}-${now.getDate()}`;
+      let hourMinuteSecond = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+      let dateFormat       = `${yearMonthDay} ${hourMinuteSecond}`;
 
       try {
-        let data = {
+        let approval = {
           sono: this.$route.query.orderId,          // 주문번호
-          approvalDate: formatNow,                  // 결재일
+          approvalDate: dateFormat,                 // 결재일
           approvalAmount: this.$route.query.amount, // 주문금액
         };
-
-        console.log("결재 저장 데이터", data);
-
-        let response = await SimpleApprovalService.create(data);
+        let response = await SimpleApprovalService.create(approval);
         this.simpleApproval = response.data;
         
         console.log(response.data);

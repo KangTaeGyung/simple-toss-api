@@ -11,14 +11,13 @@
 </template>
 
 <script>
-import HeaderCom from "./components/common/HeaderCom.vue"
+import HeaderCom from "./components/common/HeaderCom.vue";
 
 export default {
   components: {
-    HeaderCom
-  }
-
-}
+    HeaderCom,
+  },
+};
 </script>
 
 <style>

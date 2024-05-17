@@ -12,6 +12,7 @@ const routes = [
     name: "simple-order",
     component: () => import("@/views/shop/simple-product/SimpleOrderList.vue"),
   },
+  // 토스 결재
   {
     path: '/toss-check/:sono',
     component: () => import('@/views/shop/toss/CheckoutView.vue')

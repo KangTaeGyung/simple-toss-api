@@ -21,7 +21,6 @@
 
 <script>
 import { loadPaymentWidget, ANONYMOUS } from "@tosspayments/payment-widget-sdk";
-// import { nanoid } from "nanoid";
 
 export default {
   data() {

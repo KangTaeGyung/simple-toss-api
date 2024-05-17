@@ -1,9 +1,9 @@
-﻿import http from "@/utils/http-common";
+﻿import axiosDefault from "@/utils/axiosDefaultConfig";
 
 class SimpleApprovalService {
 
   create(data) {
-    return http.post("/shop/simple-approval", data);
+    return axiosDefault.post("/shop/simple-approval", data);
   }
 }
 
