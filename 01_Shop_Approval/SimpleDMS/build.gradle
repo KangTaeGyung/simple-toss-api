@@ -34,12 +34,6 @@ dependencies {
 	implementation 'org.slf4j:slf4j-api:1.7.36'
 	implementation 'org.slf4j:jcl-over-slf4j:1.7.36'
 
-//    apache kafka
-	implementation 'org.springframework.kafka:spring-kafka'
-
-//	model mapper
-	implementation 'org.modelmapper:modelmapper:2.4.2'
-
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
