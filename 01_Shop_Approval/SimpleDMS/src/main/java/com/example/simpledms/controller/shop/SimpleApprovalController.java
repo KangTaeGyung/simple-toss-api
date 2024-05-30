@@ -24,13 +24,8 @@ public class SimpleApprovalController {
     @PostMapping("/simple-approval")
     public ResponseEntity<Object> create(@RequestBody SimpleApproval simpleApproval) {
 
-        try {
             simpleApprovalService.save(simpleApproval);
 
             return new ResponseEntity<>(HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
-
 }
